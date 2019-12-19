@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>bootstrap Sample</title>
+    <link rel="shortcut icon" href="img/lk_favicon.ico" type="image/x-icon">
+
+
+
+</head>
+<body>
+
+<!--頭部begin-->
+<header id="lk_header">
+    <!--    上半部-->
+    <div class="top-bar d-none d-sm-none d-md-none d-lg-block text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-2">
+                    <a href="" class="text-muted">
+                        <i class="icon-iphone"></i>
+                        <span>FB粉絲團</span>
+                        <i class="icon-arrow-down-12"></i>
+                        <img src="img/qrcode.png" alt="粉絲團" style="width: 120px">
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-5">
+                    <i class="icon-tel"></i>
+                    <span>09xx-xxx-xxx (服務時間09:00~21:00)</span>
+                </div>
+                <div class="top-bar-3 col-md-2">
+                    <a href="#" class="text-muted">企業合作</a>
+                    <a href="#" class="text-muted">培訓師</a>
+                </div>
+                <div class="top-bar-4 col-md-3">
+                    <a href="#" class="btn btn-success btn-sm btn-lk">免費註冊</a>
+                    <!--                    http://blog.koalite.com/bbg/  顏色調整網站 按鈕自訂義-->
+                    <a href="#" class="m-2 text-muted" data-toggle="modal" data-target="#lk_login">立即登入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    下半部-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-lk">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="img/lk_logo_sm.png" alt="">
+            </a>
+            <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarlk"
+                    aria-controls="navbarlk" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarlk">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            學科學習
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Java</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Web</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Python</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">熱門課程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">相關產品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">相關連結</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto float-lg-right float-md-none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">點我登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--頭部end-->
+
+<!--輪播圖begin-->
+<section id="lk_carousel">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-sm-img="img/slide_01_640x340.jpg"
+                 data-lg-img="img/slide_01_2000x410.jpg">
+                <!--                <img src="img/slide_01_2000x410.jpg" class="d-block w-100" alt="...">-->
+            </div>
+            <div class="carousel-item" data-sm-img="img/slide_02_640x340.jpg" data-lg-img="img/slide_02_2000x410.jpg">
+                <!--                <img src="img/slide_02_2000x410.jpg" class="d-block w-100" alt="...">-->
+            </div>
+            <div class="carousel-item" data-sm-img="img/slide_03_640x340.jpg" data-lg-img="img/slide_03_2000x410.jpg">
+                <!--                <img src="img/slide_03_2000x410.jpg" class="d-block w-100" alt="...">-->
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!--輪播圖end-->
+
+<!--熱門begin-->
+<section id="lk_hot">
+    <!--    標題-->
+    <div class="text-center mt-3 mb-3">
+        <h2><strong>熱門課程</strong></h2>
+        <img src="img/star.png" alt="star.png">
+    </div>
+    <!--    內容-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="media-object rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="media m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="img/logo.png" alt="" class="rounded-circle img-fluid img-thumbnail">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="">
+                            <span class="text-danger">【熱】</span>
+                            入門到貫通
+                        </h6>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            帶你從零基礎入門前端開發, So Easy, Too Happy!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--熱門end-->
+
+
+<!--產品begin-->
+<section id="lk_product">
+    <div class="container">
+<!-- 頭部-->
+        <div style="overflow: auto;">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                   aria-selected="true">產品一</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                   aria-controls="profile" aria-selected="false">產品二</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                   aria-controls="contact" aria-selected="false">產品三</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile1-tab" data-toggle="tab" href="#profile1" role="tab"
+                   aria-controls="profile" aria-selected="false">產品四</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact1-tab" data-toggle="tab" href="#contact1" role="tab"
+                   aria-controls="contact" aria-selected="false">產品五</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab"
+                   aria-controls="contact" aria-selected="false">產品六</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact3-tab" data-toggle="tab" href="#contact3" role="tab"
+                   aria-controls="contact" aria-selected="false">產品七</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact4-tab" data-toggle="tab" href="#contact4" role="tab"
+                   aria-controls="contact" aria-selected="false">產品八</a>
+            </li>
+
+        </ul>
+        </div>
+<!--        內容-->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!--第一部分-->
+                            <div id="pd_one_1" class="mb-4 mt-4 media">
+                                <a href="" class=""><img src="img/qrcode.png" alt="" width="140"></a>
+                                <div class="text-muted ml-2 media-body" style="padding-top: 100px">
+                                    <div>更多資源歡迎</div>
+                                    <div>關註學院</div>
+                                </div>
+                            </div>
+                            <!--第二部分-->
+                            <div id="pd_one_2" class="lead">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">HTML</a></li>
+                                    <li class="breadcrumb-item"><a href="#">CSS</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="">Javascript</a></li>
+                                </ol>
+                            </div>
+                            <!--第三部分-->
+                            <h1 id="pd_one_3">
+                                <strong>
+                                    歡迎來到再現大學
+                                    <span class="text-danger">/</span>
+                                    xx大學
+                                    <span class="text-danger">/</span>
+                                </strong>
+                            </h1>
+                            <!--第四部分-->
+                            <div id="pd_one_4">
+                                <button class="btn btn-primary btn-lg" type="submit" style="margin-right: 10px">課程資訊</button>
+                                <button class="btn btn-lg" type="submit">了解更多</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-sm-none d-md-none d-lg-block">
+                            <img src="img/iphone.png" alt="" class="img-fluid" style="width:566px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-4 d-none d-sm-none d-md-none d-lg-block">
+                            <img src="img/iphone.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="text-warning mt-5">xx會員</h1>
+                            <p class="lead">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1 class="mt-5">
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge btn btn-lk" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+影片 | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1>
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+影片 | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1>
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+影片 | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1>
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+影片 | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact3" role="tabpanel" aria-labelledby="contact1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1>
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+ | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact4" role="tabpanel" aria-labelledby="contact1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd-left">
+                            <h1>
+                                <strong class="text-danger">
+                                    案例驅動·體系貫穿·全面系統
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分鐘的影片
+                                <span class="text-warning">知識點拆分講解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">玩轉HTML5+全棧系列, 玩轉Python+人工智能系列,
+                                玩轉JavaEE系列, 玩轉Go+區塊鏈系列</h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新3000+影片 | 100000+人訂閱
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <img src="img/macBook.png" alt="" class="img-responsive img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--關於我們begin-->
+<section id="lk_about">
+    <div class="text-center mt-3 mb-3">
+        <h2><strong>關於我們</strong></h2>
+        <img src="img/star.png" alt="star.png">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-1 order-2">
+                <p class="text-muted">基礎的 .nav 元件使用 flexbox 構建，並為構建所有類型的導覽元件為此提供了堅實的基礎。 它包括一些風格覆蓋（列表也包含在內）、一些更大 padding 製作的點擊連結，及基本的禁用樣式。</p>
+                <p class="text-muted">基礎的 .nav 元件使用 flexbox 構建，並為構建所有類型的導覽元件為此提供了堅實的基礎。 它包括一些風格覆蓋（列表也包含在內）、一些更大 padding 製作的點擊連結，及基本的禁用樣式。</p>
+                <p class="text-muted">基礎的 .nav 元件使用 flexbox 構建，並為構建所有類型的導覽元件為此提供了堅實的基礎。 它包括一些風格覆蓋（列表也包含在內）、一些更大 padding 製作的點擊連結，及基本的禁用樣式。</p>
+            </div>
+            <div class="col-lg-4 order-lg-2 order-1 mb-lg-0 mb-3">
+                <img src="img/02.jpg" alt="" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--關於我們end-->
+
+<!--相關連結begin-->
+<section id="lk_link" class="d-none d-md-none d-lg-block">
+    <div class="text-center mt-3 mb-3">
+        <h2><strong>相關連結</strong></h2>
+        <img src="img/star.png" alt="star.png">
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <ul class="logos d-flex justify-content-around align-items-center w-100">
+                <li><a href=""><img src="img/ibm-logo.png" width="100" alt=""></a></li>
+                <li><a href=""><img src="img/facebook-logo.png" width="50" alt=""></a></li>
+                <li><a href=""><img src="img/google-logo.png" width="50" alt=""></a></li>
+                <li><a href=""><img src="img/airbnb-logo.png" width="100" alt=""></a></li>
+                <li><a href=""><img src="img/swift-logo.png" width="50" alt=""></a></li>
+                <li><a href=""><img src="img/paypal-logo.png" width="100" alt=""></a></li>
+                <li><a href=""><img src="img/walmart-logo.png" width="100" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--相關連結end-->
+
+<!--尾部begin-->
+<footer id="lk_footer">
+    <div class="container">
+        <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-lg-4 d-none d-md-none d-lg-block">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <ul class="offset-2 col-lg-4">
+                        <li><a href="">xxxxx</a></li>
+                        <li><a href="">xxxxx</a></li>
+                        <li><a href="">xxxxx</a></li>
+                    </ul>
+                    <ul class="col-lg-4">
+                        <li><a href="">xxxxx</a></li>
+                        <li><a href="">xxxxx</a></li>
+                        <li><a href="">xxxxx</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 text-center brf7">
+                <h6>公司地址:xxxxxxxxxxxxxxxxxxxxxxxxxxx</h6>
+                <h6>連絡電話:09xx-xxx-xxx</h6>
+                <h6>電子信箱:xxxxxx@gmail.com</h6>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center d-none d-md-block">
+                <h6>聯繫我們:</h6>
+                <a href=""><img src="img/google-logo.png" alt="" data-toggle="tooltip" data-placement="top" title="google" style="width:70px;"></a>
+                <a href=""><img src="img/facebook-logo.png" alt="" data-toggle="tooltip" data-placement="top" title="facebook" style="width:70px";></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--尾部end-->
+
+<!--登入-->
+<!-- Modal -->
+<div class="modal fade" id="lk_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="請輸入帳號">
+                <input type="password" placeholder="請輸入密碼">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">登入</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--<script src="lib/jquery/tooltip.js"></script>-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
